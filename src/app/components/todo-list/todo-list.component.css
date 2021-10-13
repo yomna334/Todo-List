@@ -1,0 +1,27 @@
+.is-done {
+    text-decoration: line-through red ;
+    
+   }
+   ul{
+    list-style-type: none;
+   }
+
+.data{
+  width: 20em;
+    text-align: center;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    position: relative;
+    left:20em;
+}
+h1{
+    text-align: center;
+    color:lightgreen;
+}
+.name{
+    margin-left: 20px;
+}
+ul {
+    position: relative;
+    right: 20px;
+}

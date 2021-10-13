@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="data">
+        <form>
+            <h1>Todo App</h1>
+            <div class="row add-todo">
+                <div class="col-md-7 name">
+                    <input type="text" class="form-control" [(ngModel)]="item.name" name="itemName" id="itemName" required>
+
+                </div>
+                <div class="col-md-3">
+
+                    <button type="submit" class="btn btn-outline-success" (click)="add()">add</button>
+                </div>
+            </div>
+        </form>
+        <ul>
+            <li class="item" *ngFor="let todo of items" (click)="toggleItem(todo)" [ngClass]="{'is-done':todo.isDone}">
+                {{todo.name}}</li>
+        </ul>
+        <p *ngIf="items.length==0">please,Add a new todo</p>
+        <p *ngIf="items.length>0">{{filterdItems}} remaining out of {{items.length}}</p>
+    </div>
+</div>
